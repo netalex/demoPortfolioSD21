@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9bb5dee5f.js" crossorigin="anonymous"></script>
+    <style>
+        .wrapper {
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            background-color: aqua;
+        }
+
+        .centered_section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            border-radius: 12px;
+        }
+
+        .card_content {
+            width: 100%;
+            min-height: 66vh;
+            margin: auto 1rem;
+            box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
+            background: #fff;
+            /* max-width: 700px; */
+            position: relative;
+        }
+
+        .image_bar {
+            width: 100%;
+            height: 15vh;
+            background-color: fff;
+            border-bottom: 1px solid black;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .profile_big_image {
+            width: 14vh;
+            margin: auto;
+            border: 2px solid black;
+            background-color: purple;
+            position: relative;
+            border-radius: 50%;
+            transform: translateY(2vh);
+            padding-bottom: 14vh;
+            overflow: hidden;
+        }
+
+
+
+        .profile_big_image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .showdata_section {
+            width: 100%;
+            height: 33vh;
+            background-color: fff;
+            flex-direction: column;
+        }
+        .datatext {
+            font-size: 3vh;
+            color: gray;
+            font-family: arial;
+            margin: 0;
+            padding: 0;
+        }
+        .data {
+            font-size: 6vw;
+            font-family: arial;
+            margin: 0;
+            padding: 0;
+        }
+        .button_section {
+            height: 15vh;
+        }
+        .button_bar {
+            height: 100%
+        }
+        .button {
+            font-size: 4vw;
+            margin-left: 6rem;
+            color: gray;
+        }
+        .button:first-child {
+            margin-left: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card card_content">
+            <div class="image_bar centered_section">
+                <div class="profile_big_image">
+                    <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="">
+                </div>
+            </div>
+            <div class="showdata_section centered_section">
+                <p class="datatext">my phone number is</p>
+                <h3 class="data">(03)-22-48-30-73</h3>
+            </div>
+            <div class="button_section">
+                <div class="button_bar centered_section">
+                    <div class="button b1 centered_section"><i class="far fa-user"></i></div>
+                    <div class="button b2 centered_section"><i class="far fa-envelope"></i></div>
+                    <div class="button b3 centered_section"><i class="far fa-calendar-alt"></i></div>
+                    <div class="button b4 centered_section"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="button b5 centered_section"><i class="fas fa-phone-alt"></i></div>
+                    <div class="button b6 centered_section"><i class="fas fa-lock"></i></div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
